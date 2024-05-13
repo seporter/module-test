@@ -1,71 +1,107 @@
+/* styles.css */
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
+    background-color: #f8f9fa;
     color: #333;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 .container {
-    background-color: #ffffff;
-    border-radius: 8px;
+    margin-top: 50px;
     padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 h1 {
-    color: #2196F3;
-    border-bottom: 2px solid #2196F3;
-    padding-bottom: 10px;
+    font-size: 2.5rem;
+    color: #007bff;
     text-align: center;
+    margin-bottom: 30px;
 }
 
-h2 {
-    color: #4CAF50;
+.accordion-button {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+}
+
+.accordion-button:hover {
+    background-color: #0056b3;
+}
+
+.accordion-body {
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 h3 {
-    color: #FF5722;
-}
-
-p, li {
-    margin: 10px 0;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-.quiz {
+    font-size: 1.25rem;
     margin-top: 20px;
 }
 
-.quiz button {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px 0;
+.quiz {
+    margin-top: 40px;
 }
 
-.quiz button:hover {
-    background-color: #45a049;
+.quiz h2 {
+    font-size: 2rem;
+    color: #dc3545;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.quiz-question button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quiz-question button:hover {
+    background-color: #218838;
 }
 
 .result {
-    display: none;
     margin-top: 10px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 footer {
+    margin-top: 50px;
     text-align: center;
-    margin-top: 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.intro p {
+    animation: fadeIn 1.5s;
+}
+
+.accordion-body,
+.result {
+    animation: fadeIn 1.5s;
 }
