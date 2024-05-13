@@ -13,14 +13,27 @@ function showResult(question, answer) {
     resultDiv.classList.add('animated', 'fadeIn');
 }
 
+let openedSections = 0;
+const totalSections = document.querySelectorAll('.accordion-item').length;
+
 document.querySelectorAll('.accordion-button').forEach(button => {
     button.addEventListener('click', () => {
-        button.classList.toggle('active');
         const panel = button.nextElementSibling;
-        if (button.classList.contains('active')) {
+        if (!button.classList.contains('active')) {
+            button.classList.add('active');
             panel.style.maxHeight = panel.scrollHeight + 'px';
+            openedSections++;
         } else {
+            button.classList.remove('active');
             panel.style.maxHeight = null;
+            openedSections--;
+        }
+
+        // Check if all sections are opened
+        if (openedSections === totalSections) {
+            document.querySelector('.quiz').style.display = 'block';
+        } else {
+            document.querySelector('.quiz').style.display = 'none';
         }
     });
 });
