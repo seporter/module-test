@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,111 +8,121 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <div class="container">
+        <h1 class="text-center">Account Surrender Refresher</h1>
+        <div id="moduleContent">
+            <!-- Introduction -->
+            <section class="intro">
+                <p>Welcome to the Account Surrender Refresher module. This module will guide you through the Account Surrender process at StubHub, explain how it works, and provide troubleshooting steps. Let's get started!</p>
+            </section>
 
-<div class="container">
-    <h1>Account Surrender Refresher</h1>
-
-    <div id="moduleContent">
-        <!-- Introduction -->
-        <section>
-            <p>Welcome to the Account Surrender Refresher module. This module will guide you through the Account Surrender process at StubHub, explain how it works, and provide troubleshooting steps. Let's get started!</p>
-        </section>
-
-        <!-- Sections with Collapsible Accordion for Details -->
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        What is Account Surrender?
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p>Account Surrender is a process used by StubHub on an event-by-event basis, specifically when mobile ticket transfers are restricted by event organizers. It is applicable when transfers are closed, or a single ticket cannot be transferred. <strong>Sellers MUST BE SELECTED for this fulfillment method and are CLEARLY IDENTIFIED through work items and banners.</strong></p>
+            <!-- Sections with Collapsible Accordion for Details -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            What is Account Surrender?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Account Surrender is a process used by StubHub on an event-by-event basis, specifically when mobile ticket transfers are restricted by event organizers. It is applicable when transfers are closed, or a single ticket cannot be transferred. <strong>Sellers MUST BE SELECTED for this fulfillment method and are CLEARLY IDENTIFIED through work items and banners.</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How Account Surrender Works
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Sellers identified for Account Surrender will have a clear work item and banner under each transaction. They must send their credentials directly to the buyer using StubHub's template. This process only works if the account contains the exact number of tickets sold to the buyer. Sellers are responsible for ensuring the correct number of tickets are available in the account.</p>
+                            <h3>Steps for Sellers:</h3>
+                            <ul>
+                                <li>Identify Account Surrender transactions through work items and banners.</li>
+                                <li>Send account credentials to the buyer using the provided template.</li>
+                                <li>Ensure the account contains the exact number of tickets sold.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Troubleshooting Common Issues
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h3>The buyer cannot access the account:</h3>
+                            <ul>
+                                <li>Contact the seller to obtain the correct login details.</li>
+                                <li>If unresolved by the deadline, the order should be subbed.</li>
+                            </ul>
+                            <h3>The buyer did not receive credentials from the seller:</h3>
+                            <ul>
+                                <li>Contact the seller and provide login details with a strict deadline.</li>
+                                <li>If the seller does not meet the deadline, the order will be subbed.</li>
+                            </ul>
+                            <h3>The account is empty or contains fewer tickets than purchased:</h3>
+                            <ul>
+                                <li>Contact the seller to provide the correct account with the exact number of tickets.</li>
+                                <li>If unresolved within the deadline, sub the order.</li>
+                                <li>For brokers, escalate to Seller Support. For others, call the seller for correct information.</li>
+                                <li>If there is no answer, leave a detailed voicemail and escalate to Tier 2 Chat for follow-up.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        How Account Surrender Works
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p>Sellers identified for Account Surrender will have a clear work item and banner under each transaction. They must send their credentials directly to the buyer using StubHub's template. This process only works if the account contains the exact number of tickets sold to the buyer. Sellers are responsible for ensuring the correct number of tickets are available in the account.</p>
-                        <h3>Steps for Sellers:</h3>
-                        <ul>
-                            <li>Identify Account Surrender transactions through work items and banners.</li>
-                            <li>Send account credentials to the buyer using the provided template.</li>
-                            <li>Ensure the account contains the exact number of tickets sold.</li>
-                        </ul>
-                    </div>
+
+            <!-- Quiz Section -->
+            <div class="quiz">
+                <h2>Quiz Time!</h2>
+                <div class="quiz-question">
+                    <p><strong>Question 1:</strong> What should a seller do if the buyer cannot access the account?</p>
+                    <button onclick="showResult('q1', 'correct')">Contact the seller to obtain the correct login details.</button>
+                    <button onclick="showResult('q1', 'incorrect')">Sub the order immediately.</button>
+                    <div id="q1" class="result"></div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Troubleshooting Common Issues
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <h3>The buyer cannot access the account:</h3>
-                        <ul>
-                            <li>Contact the seller to obtain the correct login details.</li>
-                            <li>If unresolved by the deadline, the order should be subbed.</li>
-                        </ul>
-                        <h3>The buyer did not receive credentials from the seller:</h3>
-                        <ul>
-                            <li>Contact the seller and provide login details with a strict deadline.</li>
-                            <li>If the seller does not meet the deadline, the order will be subbed.</li>
-                        </ul>
-                        <h3>The account is empty or contains fewer tickets than purchased:</h3>
-                        <ul>
-                            <li>Contact the seller to provide the correct account with the exact number of tickets.</li>
-                            <li>If unresolved within the deadline, sub the order.</li>
-                            <li>For brokers, escalate to Seller Support. For others, call the seller for correct information.</li>
-                            <li>If there is no answer, leave a detailed voicemail and escalate to Tier 2 Chat for follow-up.</li>
-                        </ul>
-                    </div>
+                <div class="quiz-question">
+                    <p><strong>Question 2:</strong> What happens if the seller does not provide credentials to the buyer by the deadline?</p>
+                    <button onclick="showResult('q2', 'correct')">The order will be subbed.</button>
+                    <button onclick="showResult('q2', 'incorrect')">The seller will be given more time.</button>
+                    <div id="q2" class="result"></div>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>Question 3:</strong> What should be done if the account contains fewer tickets than purchased?</p>
+                    <button onclick="showResult('q3', 'correct')">Contact the seller to provide the correct account with the exact number of tickets.</button>
+                    <button onclick="showResult('q3', 'incorrect')">Issue a refund immediately.</button>
+                    <div id="q3" class="result"></div>
+                </div>
+                <div class="quiz-question">
+                    <p><strong>Question 4:</strong> How can you know if a seller is approved for the Account Surrender fulfillment method?</p>
+                    <button onclick="showResult('q4', 'correct')">They are clearly identified through work items and banners.</button>
+                    <button onclick="showResult('q4', 'incorrect')">They will contact you directly for approval.</button>
+                    <div id="q4" class="result"></div>
                 </div>
             </div>
         </div>
 
-        <!-- Quiz Section -->
-        <div class="quiz">
-            <h2>Quiz Time!</h2>
-            <p><strong>Question 1:</strong> What should a seller do if the buyer cannot access the account?</p>
-            <button onclick="showResult('q1', 'correct')">Contact the seller to obtain the correct login details.</button>
-            <button onclick="showResult('q1', 'incorrect')">Sub the order immediately.</button>
-            <div id="q1" class="result"></div>
-
-            <p><strong>Question 2:</strong> What happens if the seller does not provide credentials to the buyer by the deadline?</p>
-            <button onclick="showResult('q2', 'correct')">The order will be subbed.</button>
-            <button onclick="showResult('q2', 'incorrect')">The seller will be given more time.</button>
-            <div id="q2" class="result"></div>
-
-            <p><strong>Question 3:</strong> What should be done if the account contains fewer tickets than purchased?</p>
-            <button onclick="showResult('q3', 'correct')">Contact the seller to provide the correct account with the exact number of tickets.</button>
-            <button onclick="showResult('q3', 'incorrect')">Issue a refund immediately.</button>
-            <div id="q3" class="result"></div>
-
-            <p><strong>Question 4:</strong> How can you know if a seller is approved for the Account Surrender fulfillment method?</p>
-            <button onclick="showResult('q4', 'correct')">They are clearly identified through work items and banners.</button>
-            <button onclick="showResult('q4', 'incorrect')">They will contact you directly for approval.</button>
-            <div id="q4" class="result"></div>
-        </div>
+        <footer>
+            <p>Thank you for participating in the Account Surrender training module.</p>
+        </footer>
     </div>
 
-    <footer>
-        <p>Thank you for participating in the Account Surrender training module.</p>
-    </footer>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
