@@ -45,6 +45,7 @@ h3 {
 }
 
 .quiz {
+    display: none;
     margin-top: 40px;
 }
 
